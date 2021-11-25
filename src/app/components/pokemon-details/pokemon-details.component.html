@@ -1,0 +1,7 @@
+<ng-container *ngIf="pokemon">
+    <h1>{{pokemon.name}}</h1>
+    <figure>
+        <img [src]="pokemon.sprite_url">
+        <figcaption><span *ngFor="let type of pokemon.types; let i = index">Type {{i+1}} : {{type}}</span></figcaption>
+    </figure>
+</ng-container>

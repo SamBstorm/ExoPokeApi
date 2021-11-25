@@ -1,0 +1,7 @@
+<ol>
+    <li *ngFor="let pokemon of pokemons">
+        <a [routerLink]="'/details/'+pokemon">
+            <div>{{pokemon}}</div>
+        </a>
+    </li>
+</ol>
